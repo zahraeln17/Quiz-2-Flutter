@@ -36,10 +36,18 @@ class Fakultas extends StatelessWidget {
                   height: 100,
                     width: 100,
                   ),
-              ])
-        )
-      ),
-   ]),
+              ]),
+            ),
+            onTap: () {
+            Navigator.push(
+              context, 
+              MaterialPageRoute(builder: (context) {
+              return RincianFakultas();
+            }));
+          },
+        ),
+      ]),
    );
   }
 }
+

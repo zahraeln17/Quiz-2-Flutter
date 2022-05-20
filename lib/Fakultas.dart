@@ -13,12 +13,15 @@ class Fakultas extends StatelessWidget {
             decoration: BoxDecoration(border: Border.all()),
             padding: EdgeInsets.all(14),
             child: Row(
-                children: [
+                children:[
                   Container(
-                      child: Column(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Column(
                     children: [
                       Text("FPMIPA",
-                        style: TextStyle(fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.bold),
                       ),
                       Text("Fakultas Pendidikan Matematika dan Ilmu Pengetahuan Alam",
                         style: TextStyle(color: Colors.grey),
@@ -27,24 +30,16 @@ class Fakultas extends StatelessWidget {
                   )),
                   Container(
                     decoration: BoxDecoration(
-                        border: Border.all(),
                         image: DecorationImage(
                             image: NetworkImage(
                                 'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'))),
                   height: 100,
                     width: 100,
-                  )
-                ],
-              )
-          onTap: () {
-            //gunakan navigator untuk panggil RincianFakultas
-          },
-        ),
-        Container(
-            decoration: BoxDecoration(border: Border.all()),
-            padding: EdgeInsets.all(14),
-            child: Text("baris kedua")),
-      ]),
-    );
+                  ),
+              ])
+        )
+      ),
+   ]),
+   );
   }
 }
